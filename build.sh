@@ -10,6 +10,7 @@ timeStart
 source build/envsetup.sh
 export BUILD_USERNAME=zacky
 export BUILD_HOSTNAME=android-build
+export MK_BUILDTYPE=NIGHTLY
 lunch mokee_whyred-userdebug
 mkfifo reading # Jangan di Hapus
 tee "${BUILDLOG}" < reading & # Jangan di Hapus
